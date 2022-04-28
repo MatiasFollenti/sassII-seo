@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*nesting o anidamiento*/
+header {
+  background-color: cornflowerblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* aqui creé un partial y luego apliqué el anidamiento en la parte del formulario*/
+form {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 80%;
+}
+form .form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+form .form-row input [type=text] {
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 100%;
+}
+form .form-row input [type=email] {
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 100%;
+}
+form button {
+  font-size: 20px;
+  color: aliceblue;
+  font-weight: bold;
+  background-color: cornflowerblue;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 3px;
+}
+
+/*# sourceMappingURL=style.css.map */
