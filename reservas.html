@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<title>BlackForest Cabins</title> 
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<!--CSS-->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="mb-5">
+        <h1>BlackForest Cabins</h1>
+        <nav class="navbar navbar-expand-lg navbar-secondary bg-dark text-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="images/favicon.ico" alt="icono BlackForest"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  <a class="nav-link" href="Cabanias.html">Cabañas</a>
+                  <a class="nav-link" href="Casadelarbol.html">Casas del Árbol</a>
+                  <a class="nav-link" href="reservas.html">Reservas</a>
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                  
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <section id="Reservas" class="container">
+      <h2>Reservá con nosotros!</h2>
+      <p>
+          <em>Si estas interesado en vivir esta experiencia con nosotros puedes reservar ahora mismo de manera segura.</em>
+      </p>
+    </section>    
+    <form action="form.php" method="POST" class="container mb-5 reserve-form">
+      <div class="form-row">
+          <label for="full-name">Nombre y Apellido</label>
+          <input type="text" id="full-name" name="nombre-completo" placeholder="Ej: Juan Perez" required>
+      </div>
+      <div class="form-row">
+          <label for="Mail">Email</label>
+          <input type="email" id="Mail" name="correo-electronico" placeholder="Ej:juanperez@gmail.com" required>
+      </div>
+      <fieldset class="tipo-alojamiento form-row">
+          <legend>Tipo de alojamiento</legend>
+          <input type="radio" name="tipo-de-alojamiento" id="tipo-alojamiento1"> 
+          <label for="tipo-alojamiento1">Cabañas</label>
+
+          <input type="radio" id="tipo-alojamiento2" name="tipo-de-alojamiento">
+          <label for="tipo-alojamiento2">Casa del arbol</label>
+      </fieldset>
+      <div class="form-row">
+          <label for="DNI">DNI</label>
+          <input type="number" id="DNI" name="id-number" placeholder="Ej: 12345678" required>
+      </div>
+      <div class="form-row">
+          <label for="pax">Cantidad de huespedes</label>
+          <input type="number" id="pax" name="pax-number" required>
+      </div>
+      <div class="form-row">
+          <label for="lugar-procedencia">Lugar de procedencia</label>
+          <input type="text" id="lugar-procedencia" name="lugar-de-origen" placeholder="Ej:Córdoba" required>
+      </div>
+      <div class="form-row">
+              <label for="arrival-date">Fecha de arribo</label>
+              <input type="date" id="arrival-date" name="fecha-de-llegada" required>
+      </div>    
+      <div class="form-row">
+          <label for="leave-date">Fecha de salida</label>
+          <input type="date" id="leave-date" name="fecha-de-salida" required>
+      </div> 
+      <div class="form-row boton-reserva">
+          <button type="submit">Finalizar Reserva</button> 
+      </div>     
+    </form class="reserva-form">
+
+  <footer class="bg-dark text-light">
+      <div class="row">
+          <div class="col">
+              <h3>Seguinos en nuestras redes sociales!</h3>
+          </div>
+          <div class="row">
+            <div class="col">
+              <a href="htpps:instagram.com">Instagram</a>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col">
+                <a href="htpps:facebook.com">Facebook</a>
+            </div>
+      <div class="row">
+          <div class="col">
+              <h6>Todos los derechos reservados</h6>
+          </div>
+      </div>
+      </div>
+      </footer>
+<!--bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
