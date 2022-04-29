@@ -1,0 +1,15 @@
+/*EN EL HIPOTETICO CASO DE QUE LA WEB POSEA UNA VISTA PARA LA EMPRESA Y OTRA PARA EL CLIENTE PODRIAN APLICARSE ASI LOS MAPAS. EN ESTE CASO AL SER UNA WEB MUY PEQUEÑA NO TENGO DONDE UTILIZARLOS*/
+
+$perfil-empresa: (
+    background-empresa: coral,
+    border-empresa: 1px solid grey,
+    font-empresa: 32px,
+    fontfamily-empresa: arial 
+);
+
+$perfil-cliente: (
+    background-cliente: grey,
+    border-cliente: 2px solid black,
+    font-cliente: 28px,
+    fontfamily-cliente: helvetica
+);

@@ -1,4 +1,7 @@
+@import "../base/color";
+@import "../base/mixins";
 /* aqui creé un partial y luego apliqué el anidamiento en la parte del formulario*/
+
 form {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -28,12 +31,13 @@ form {
             width: 100%;} 
         }
         button {
-            font-size: 20px;
-            color: aliceblue;
-            font-weight: bold;
-            background-color: cornflowerblue;
-            padding: 10px 40px;
-            border: none;
-            border-radius: 3px;
+            @extend %botones;
+
+            &:hover {
+                background-color: mix($azul, $celeste);
+                @include botton (scale(2));
+            }
+           
             } 
     }
+/*EXTEND y MIXIN en linea 33 y 36/37 respectivamente*/

@@ -40,6 +40,12 @@ form .form-row input [type=email] {
   border-radius: 3px;
   width: 100%;
 }
+form button:hover {
+  background-color: #7373ef;
+  transform: scale(2);
+}
+
+/*EXTEND y MIXIN en linea 33 y 36/37 respectivamente*/
 form button {
   font-size: 20px;
   color: aliceblue;
@@ -49,5 +55,7 @@ form button {
   border: none;
   border-radius: 3px;
 }
+
+/*EN EL HIPOTETICO CASO DE QUE LA WEB POSEA UNA VISTA PARA LA EMPRESA Y OTRA PARA EL CLIENTE PODRIAN APLICARSE ASI LOS MAPAS. EN ESTE CASO AL SER UNA WEB MUY PEQUEÑA NO TENGO DONDE UTILIZARLOS*/
 
 /*# sourceMappingURL=style.css.map */
