@@ -57,5 +57,14 @@ form button {
 }
 
 /*EN EL HIPOTETICO CASO DE QUE LA WEB POSEA UNA VISTA PARA LA EMPRESA Y OTRA PARA EL CLIENTE PODRIAN APLICARSE ASI LOS MAPAS. EN ESTE CASO AL SER UNA WEB MUY PEQUEÑA NO TENGO DONDE UTILIZARLOS*/
+#empresa {
+  background-color: coral;
+  font-family: arial;
+}
+
+#cliente {
+  background-color: grey;
+  font-family: helvetica;
+}
 
 /*# sourceMappingURL=style.css.map */

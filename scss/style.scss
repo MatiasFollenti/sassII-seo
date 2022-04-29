@@ -8,3 +8,13 @@ header {
 @import "base/mixins";
 @import "base/extends";
 @import "base/maps";
+
+#empresa {
+    background-color: map-get($perfil-empresa, background-empresa);
+    font-family: map-get($perfil-empresa, fontfamily-empresa);
+}
+
+#cliente {
+background-color: map-get($perfil-cliente, background-cliente);
+font-family: map-get($perfil-cliente, fontfamily-cliente);
+}
